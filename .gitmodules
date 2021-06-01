@@ -1,0 +1,3 @@
+[submodule "lib/bzla-ls"]
+	path = lib/bzla-ls
+	url = git@github.com:bitwuzla/bzla-ls.git
