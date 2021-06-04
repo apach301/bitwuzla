@@ -38,10 +38,10 @@ set(test_names
   nodemap
   normquant
   overflow
-  prop
-  propcomplete
-  propcons
-  propinv
+  propold
+  propoldcomplete
+  propoldcons
+  propoldinv
   rotate
   queue
   satmgr
