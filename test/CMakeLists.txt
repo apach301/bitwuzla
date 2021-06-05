@@ -38,6 +38,7 @@ set(test_names
   nodemap
   normquant
   overflow
+  prop
   propold
   propoldcomplete
   propoldcons
