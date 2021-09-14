@@ -88,7 +88,7 @@ set(libbitwuzla_src_files
   utils/bzlanodemap.c
   utils/bzlaoptparse.c
   utils/bzlapartgen.c
-  utils/bzlarng.c
+  utils/bzlarng.cpp
   utils/bzlaunionfind.c
   utils/bzlautil.c
   utils/bzlaabort.c
@@ -113,7 +113,7 @@ target_include_directories(bitwuzla PRIVATE ${Btor2Tools_INCLUDE_DIR})
 target_link_libraries(bitwuzla ${Btor2Tools_LIBRARIES})
 
 target_include_directories(bitwuzla PRIVATE lib/bzla-ls/src)
-target_link_libraries(bitwuzla bzlals)
+target_link_libraries(bitwuzla bzlabv bzlals bzlarng)
 
 if(GMP_FOUND)
   target_include_directories(bitwuzla PRIVATE ${GMP_INCLUDE_DIR})
