@@ -440,14 +440,14 @@ if(GIT_FOUND AND EXISTS "${PROJECT_SOURCE_DIR}/.git")
     endif()
 endif()
 
-if(NOT EXISTS "${PROJECT_SOURCE_DIR}/lib/bzla-ls/CMakeLists.txt")
+if(NOT EXISTS "${PROJECT_SOURCE_DIR}/lib/bzla-libs/CMakeLists.txt")
     message(FATAL_ERROR
       "The submodules were not downloaded! GIT_SUBMODULE was turned off or "
       "failed. Please update submodules and try again.")
 endif()
 set(tmp_testing ${TESTING})
 set(TESTING OFF)
-add_subdirectory(lib/bzla-ls)
+add_subdirectory(lib/bzla-libs)
 set(TESTING ${tmp_testing})
 
 #-----------------------------------------------------------------------------#
